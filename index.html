@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/Screen Shot 2020-07-10 at 3.33.03 PM.png">
+    <link rel="stylesheet" href= "style.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src = "script.js"></script>
+
+    <title>Ale Enthusiast</title>
+</head>
+<body>
+    <section class="hero is-success is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <img class="mySlides animate-fading" src="https://image.shutterstock.com/image-photo/pouring-beer-bubble-froth-glass-600w-1043587033.jpg" style="width:100%">
+            <img class="mySlides animate-fading" src="https://image.shutterstock.com/image-photo/glasses-different-sorts-craft-beer-260nw-1212903172.jpg" style="width:100%">
+            <img class="mySlides animate-fading" src="Images/DSC_3496.JPG" style="width:100%">
+            <img class="mySlides animate-fading" src="Images/DSC_3443.JPG" style="width:100%">
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="w3-content w3-section" style="max-width:500px"> 
+        <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+      
+        <img class="mySlides animate-fading" src="https://image.shutterstock.com/image-photo/pouring-beer-bubble-froth-glass-600w-1043587033.jpg" style="width:100%">
+        <img class="mySlides animate-fading" src="https://image.shutterstock.com/image-photo/glasses-different-sorts-craft-beer-260nw-1212903172.jpg" style="width:100%">
+        <img class="mySlides animate-fading" src="Images/DSC_3496.JPG" style="width:100%">
+        <img class="mySlides animate-fading" src="Images/DSC_3443.JPG" style="width:100%">
+      </div>  -->
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);    
+      }
+      </script>
+    
+</body>
+</html>
