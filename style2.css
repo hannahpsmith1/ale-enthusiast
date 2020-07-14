@@ -1,0 +1,59 @@
+.mySlides {display:none;}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.hero.has-background{
+  position: relative;
+  overflow: hidden; 
+}
+.hero-background {
+  position: absolute;
+  /* object-fit: cover; */
+  object-position: center center;
+  max-width: ;width: 100%;
+  max-height: 100%;
+  }
+.hero-background.is-transparent {
+  opacity: 1;
+  }
+.button{
+  opacity: 0.3;
+}
+
+.header-title {
+  color: white;
+  font-family: 'Galada', cursive;
+  font-size: 50px;
+  /* float: left; */
+}
+
+.header-subtitle, .tabs {
+  color: white;
+  font-family: 'Anton', sans-serif;
+  font-size: large;
+  /* float:left; */
+}
+
+.logo{
+
+}

@@ -1,0 +1,72 @@
+<!--  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel= "stylesheet" href="style2.css">
+<!-- <script src="test.js"></script> -->
+<style>
+/* .mySlides {display:none;}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/* @media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+} */ 
+
+
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="background Slideshow"
+style="max-width:80%" style="max-height: 500px">
+  <img class="mySlides fade" src="Images/Drakes.jpg" style="width:100%">
+  <img class="mySlides fade" src="Images/IMG_1215.jpg" style="width:100%">
+  <img class="mySlides fade" src="Images/Firestone.jpg" style="width:100%">
+  <img class="mySlides fade" src="Images/Flight.jpg" style="width:100%">
+  <img class="mySlides fade" src="Images/Seattle.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 20000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

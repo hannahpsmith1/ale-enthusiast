@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href= "style.css">
+    <link rel="icon" href="Images/c871b49d-fb1b-433f-8b20-fb3852c5b860_200x200.png">
+    <link rel="stylesheet" href= "style2.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!-- <script src = "script.js"></script> -->
+
+    <title>Ale Enthusiast</title>
+</head>
+<body>
+    <div class="hero has-background is-fullheight ">
+        <!-- <img alt="National Parks" class="hero-background is-transparent" src="https://www.nationalparks.org/sites/default/files/styles/wysiwyg_full_1x/public/npf_may2020apostleislandns_digitaldownload.png?itok=IR_G26BA" /> -->
+        <!-- <img class="hero-background mySlides fade" src="Images/IMG_1165.jpg">
+        <img class="hero-background mySlides fade" src="Images/IMG_1215.jpg">
+        <img class="hero-background mySlides fade" src="Images/IMG_1989.jpg"> -->
+        <img class="hero-background mySlides fade" src="Images/Drakes.jpg" style="width:100%">
+        <img class="hero-background mySlides fade" src="Images/IMG_1215.jpg" style="width:100%">
+        <img class="hero-background mySlides fade" src="Images/Firestone.jpg" style="width:100%">
+        <img class="hero-background mySlides fade" src="Images/Flight.jpg" style="width:100%">
+        <img class="hero-background mySlides fade" src="Images/Seattle.jpg" style="width:100%">
+
+            <!-- Hero head: will stick at the top -->
+            <div class="hero-head">
+              <nav class="navbar">
+                <div class="container">
+                  <div class="navbar-brand">
+                    <a class="navbar-item" href= "index.html">
+                      <img class= "logo" src="Images/c871b49d-fb1b-433f-8b20-fb3852c5b860_200x200.png" alt="Globe with beer glasses around it">Beer Pass
+                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </div>
+                  <div id="navbarMenuHeroA" class="navbar-menu">
+                    <div class="navbar-end">
+                      <nav class="tabs">
+                        <div class="container">
+                          <ul>
+                            <!-- <li class="is-active"><a>Projects</a></li> -->
+                            <li><a href="contact.html">
+                              <span class="icon">
+                                <i class="far fa-address-card"></i>
+                              </span>
+                            <span>Contact</span>
+                            </a></li>
+                            <li><a href="https://www.linkedin.com/in/hannah-patience-smith/" target = "_blank">
+                              <span class="icon">
+                              <i class="fab fa-linkedin"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                            </a></li>
+                            <li><a href="https://github.com/hannahpsmith1" target= "_blank">
+                              <span class="icon">
+                              <i class="fab fa-github"></i>
+                            </span>
+                            <span>Github</span>
+                            </a></li>
+                            <!-- <li><a href="Aboutme.html">About Me</a></li>
+                            <li><a href="#">Placeholder</a></li> --> 
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          
+            <!-- Hero content: will be in the middle -->
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <h1 class="header-title">
+                  Welcome
+                </h1>
+                <h2 class="header-subtitle">
+                  Ale Enthusiast
+                </h2>
+              </div>
+            </div>
+          
+            <!-- Hero footer: will stick at the bottom -->
+            <div class="hero-foot">
+              <nav class="tabs">
+                <div class="container">
+                  <ul>
+                    <li><a href="projects.html" >Projects</a></li>
+                    <li><a href="Aboutme.html" >About Me</a></li>
+                    <li><p id="currentDay" class="lead"></p></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+      </div>
+      <!-- <script src = "script.js"></script> -->
+
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 20000); // Change image every 2 seconds
+        }
+        </script>   
+</body>
+</html>
